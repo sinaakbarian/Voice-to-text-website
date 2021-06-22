@@ -13,10 +13,12 @@ Install requirement packages:
      
 Then open a browser go to http://localhost:8889/ and use the app. To deploy it on the GCP you need to install GCP SDK: https://cloud.google.com/sdk/install. Once initialization is done:
 
-            gcloud init
+     gcloud init
+     
 The app will be deployed with the following command:
 
-            gcloud app deploy
+     gcloud app deploy
+     
 The web will be open with:
 
-             gcloud app browse
+     gcloud app browse
