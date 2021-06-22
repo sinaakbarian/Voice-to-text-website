@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <h1 style="text-align:center;">This is a test for <span style="color:red;font-weight:bold">V2G Screener</span> </h1>
+
+</head>
+
+<body>
+<br>
+<br>
+<br>
+{% if participant_score==3 %}
+<br>
+<br>
+<br>
+<h2 style="text-align:center;"> The first sentence was: <span style="color:blue;font-weight:bold">Hello how are you today is july 1st 2019</span></h2>
+<br>
+<br>
+<h2 style="text-align:center;"> You said: <span style="color:red;font-weight:bold">{{ google_sentence_1 }}</span></h2>
+<br>
+<br>
+<h2 style="text-align:center;"> The sentence is: <span style="color:blue;font-weight:bold">Hello how are you today is july 1st 2019</span></h2>
+<br>
+<br>
+<h2 style="text-align:center;"> The sentence is: <span style="color:red;font-weight:bold">{{ google_sentence_2 }}</span></h2>
+<br>
+<br>
+<h2 style="text-align:center;"> The sentence is: <span style="color:blue;font-weight:bold">Hello how are you today is july 1st 2019</span></h2>
+<br>
+<br>
+<h2 style="text-align:center;"> The sentence is: <span style="color:red;font-weight:bold">{{ google_sentence_3 }}</span></h2>
+
+{% else %}
+<h2 style="text-align:center;">You are not passed!!! <span style="color:blue;font-weight:bold">Retry!: </span> </h2>
+<br>
+<br>
+<h2 style="text-align:center;"> The first sentence was: <span style="color:blue;font-weight:bold">Hello how are you today is july 1st 2019</span></h2>
+<br>
+<br>
+<h2 style="text-align:center;"> You said: <span style="color:red;font-weight:bold">{{ google_sentence_1 }}</span></h2>
+<br>
+<br>
+<h2 style="text-align:center;"> The sentence is: <span style="color:blue;font-weight:bold">Hello how are you today is july 1st 2019</span></h2>
+<br>
+<br>
+<h2 style="text-align:center;"> The sentence is: <span style="color:red;font-weight:bold">{{ google_sentence_2 }}</span></h2>
+<br>
+<br>
+<h2 style="text-align:center;"> The sentence is: <span style="color:blue;font-weight:bold">Hello how are you today is july 1st 2019</span></h2>
+<br>
+<br>
+<h2 style="text-align:center;"> The sentence is: <span style="color:red;font-weight:bold">{{ google_sentence_3 }}</span></h2>
+
+{% endif %}
+		
+</body>
+</html>

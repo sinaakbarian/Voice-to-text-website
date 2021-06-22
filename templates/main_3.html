@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>V2G Screener</title>
+
+</head>
+
+<body>
+ 
+<h1 style="text-align:center;">Step <span style="color:red;font-weight:bold">3</span> </h1>
+<br>
+<br>
+<br>
+<h2 style="text-align:center;">Please Say: <span style="color:blue;font-weight:bold">Hello how are you today is july 1st 2019 </span> </h2>
+
+<br>
+<br>
+<h2 style="text-align:center;">Please Upload Your <span style="color:blue;font-weight:bold">Voice Here: </span> </h2>
+
+<br>
+<br>
+<form action="/wait_3/" method=post enctype=multipart/form-data style="text-align:center;">
+<br>
+<br>
+<br>
+<input type="file" name="file" accept="audio/*" style="text-align:center;" capture id="recorder">
+<br>
+<br>
+<br>
+<audio id="player" controls></audio>
+<script>
+  const recorder = document.getElementById('recorder');
+  const player = document.getElementById('player');
+
+  recorder.addEventListener('change', function(e) {
+    const file = e.target.files[0];
+    const url = URL.createObjectURL(file);
+    // Do something with the audio file.
+    player.src = url;
+  });
+</script>
+<br>
+<br>
+<br>
+<input type="submit" value= "Prediction" style="text-align:center;">
+
+
+</form>
+
+
+</body>
+</html>
